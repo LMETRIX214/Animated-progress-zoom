@@ -1,0 +1,41 @@
+body
+{
+    background: #000000;
+    margin: 0;
+    padding: 0;
+}
+.loader
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+} 
+.loader span
+{
+    font-family: arial;
+    font-size: 24px;
+    color: rgba(255,255,255,.1);
+    display: inline-block;
+    animation: animacion 2s infinite;
+}
+@keyframes animacion 
+{
+    0%
+    {
+        color: rgba(255,255,255,.1);
+        transform: translateY(0);
+        margin-left: 10px;
+    }
+    25%
+    {
+        color: rgb(0, 4, 255);
+        transform: translateY(-15px);
+        margin-left: 10px;
+    }
+    100%
+    {
+        color: rgba(255,255,255,.1);
+        transform: translateY(0);
+    }
+}
